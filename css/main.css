@@ -1,0 +1,191 @@
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html {
+	box-sizing: border-box;
+-moz-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+		box-sizing: inherit;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	padding: 0em;
+	margin: 0em;
+	padding-top: 1em;
+	text-align: center;
+	color: #bd3d30;
+}
+
+
+h1 {
+	margin: 0em;
+	font-size: 3rem;
+	position: relative;
+}
+
+p {
+	font-size: 1em;
+	padding: 2em;
+	background-color: #bd3d30;
+	color: white;
+}
+
+img {
+	width: 100%;
+}
+
+.google {
+	float: left;
+	clear: left;
+	width: 50%;
+	padding-left: 4em;
+}
+
+.pin {
+	float: right;
+	clear: right;
+	width: 50%;
+	padding-right: 4em;
+}
+
+.twitter {
+	float: left;
+	clear: left;
+	width: 50%;
+	padding-left: 4em;
+}
+
+.insta {
+	float: right;
+	clear: right;
+	width: 50%;
+	padding-right: 4em;
+}
+
+
+footer div {
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+
+	/* IE fix. */
+	*display: inline;
+	zoom: 1;
+	}
+
+footer:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+    }
+
+footer {
+	background-color: black;
+	text-align: justify;
+	padding: 0;
+}
+
+
+div {
+	background-color: black;
+
+}
+
+.wrapper {
+ max-width: 25em;
+ margin: 0 auto;
+}
+
+@media only screen and (min-width:27em) {
+
+	body{
+		background-color: black;
+		color: white;
+		}
+
+	header {
+		padding-bottom: 2em;
+		padding-top: 2em;
+	}
+
+	html {
+		font-size: 120%;
+	}
+
+	.google, .pin, .insta, .twitter {
+		width: 40%;
+	}
+
+	footer{
+		padding-top: 2em;
+	}
+
+@media only screen and (min-width:45em) {
+	body{
+		background-color: white;
+		}
+
+footer{
+	padding-left: 8em;
+}
+
+.google {
+	float: left;
+	clear: none;
+	width: 20%;
+	padding-left: 1em;
+}
+
+.pin {
+	float: left;
+	clear: none;
+	width: 20%;
+	padding-right: 1em;
+}
+
+.twitter {
+	display: left;
+	clear: none;
+	width: 20%;
+	padding-left: 1em;
+}
+
+.insta {
+	float: left;
+	width: 20%;
+	clear: none;
+	padding-right: 1em;
+}
+
+.bigwrapper {
+ max-width: 60em;
+ margin: 0 auto;
+}
+
+}
+
+@media print {
+
+p {
+	min-width: 27em;
+	}
+
+}
+
+}
+
+
+}
